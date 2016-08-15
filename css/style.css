@@ -56,30 +56,17 @@ li:before {
 .avatar {
 	position: absolute;
 	bottom: 0;
-	right: 0;
+	left: 0;
 	width: 30vw;
 	height: 30vw;
+	font-size: calc(1vw);
+	line-height: 0.35vw;
+	letter-spacing: -0.3VW;
+	-webkit-filter: invert(100%);
 }
-.avatar img {
+.avatar pre {
 	position: absolute;
-	width: 100%;
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-	mix-blend-mode: darken;
-
-}
-
-.avatar:before {
-	content: '';
-	display: block;
-	position: absolute;
-	width: 30vw;
-	height: 200px;
-	background: currentColor;
-	top: -100px;
-	left: -15vw;
-	transform: rotate(-45deg);
-	z-index: 3;
+   width: 100%;
 }
 
 @keyframes appear {
