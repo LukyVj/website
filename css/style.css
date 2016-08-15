@@ -5,6 +5,10 @@
 
 html { padding: 1em }
 
+body {
+	-webkit-animation: appear 2s ease 1s;
+	animation: appear 2s ease 1s;
+}
 
 a {
 	color: inherit;
@@ -76,5 +80,23 @@ li:before {
 	left: -15vw;
 	transform: rotate(-45deg);
 	z-index: 3;
+}
+
+@keyframes appear {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes appear {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
