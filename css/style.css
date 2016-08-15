@@ -6,8 +6,8 @@
 html { padding: 1em }
 
 body {
-	-webkit-animation: appear 2s ease 1s;
-	animation: appear 2s ease 1s;
+	-webkit-animation: appear 3s ease;
+	animation: appear 3s ease;
 }
 
 a {
