@@ -1,3 +1,5 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono';
+
 * {
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscaled;
@@ -8,6 +10,7 @@ html { padding: 1em }
 body {
 	-webkit-animation: appear 3s ease;
 	animation: appear 3s ease;
+font-family: 'Roboto Mono', monospace;
 }
 
 ::selection {
