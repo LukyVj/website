@@ -196,7 +196,7 @@
 
 
 
-    window.onload = function() {
+    function init() {
       var is = Math.floor(Math.random() * 100);
       var set = Math.floor(Math.random() * 2);
       getJSON('data/colors.json').then(function(data) {
@@ -213,5 +213,7 @@
 
       });
     }
+
+    document.addEventListener('DOMContentLoaded', init())
     </script>
 </html>
