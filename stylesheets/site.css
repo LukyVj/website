@@ -380,7 +380,26 @@ body.comic:after {
   -webkit-box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 100px rgba(0, 0, 0, 0.5); }
 
+.title {
+  margin-bottom: 1em;
+  display: inline-block; }
+
 @media (max-width: 768px) {
+  main {
+    height: 90vh; }
+
+  footer {
+    text-align: center; }
+
+  header.project-header {
+    display: none; }
+
+  body {
+    font-size: calc(var(--layout-size) / 1.2); }
+
+  body {
+    padding: 0; }
+
   footer {
     float: left;
     position: relative;
