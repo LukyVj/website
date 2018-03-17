@@ -59,12 +59,14 @@ function init() {
           data.most_active_20[is].color_one
         );
       }
+
+      document.body.classList.add('appear')
     }
   });
 }
 
-window.oncontextmenu = function () {
-  document.body.classList.add('comic')
-}
+// window.oncontextmenu = function () {
+//   document.body.classList.add('comic')
+// }
 
 window.addEventListener("load", init());
