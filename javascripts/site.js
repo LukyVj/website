@@ -33,7 +33,7 @@ var getJSON = function(url) {
 };
 
 function init() {
-  getJSON("../data/colors.json").then(function(data) {
+  getJSON("https://lucasbonomi.com/data/colors.json").then(function(data) {
     var is = Math.floor(Math.random() * data.length);
     var set = Math.floor(Math.random() * 2);
     var declaration = document.documentElement.style;
