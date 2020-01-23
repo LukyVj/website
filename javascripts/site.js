@@ -33,34 +33,22 @@ var getJSON = function(url) {
 };
 
 function init() {
-  getJSON('https://randoma11y.com/stats').then(function(data) {
-
-    var is = Math.floor(Math.random() * data.most_active_20.length);
+  getJSON("../data/colors.json").then(function(data) {
+    var is = Math.floor(Math.random() * data.length);
     var set = Math.floor(Math.random() * 2);
     var declaration = document.documentElement.style;
 
     if (data) {
+      console.log(data);
       if (set == 1) {
-        declaration.setProperty(
-          "--background-color",
-          data.most_active_20[is].color_one
-        );
-        declaration.setProperty(
-          "--foreground-color",
-          data.most_active_20[is].color_two
-        );
+        declaration.setProperty("--background-color", data[is].color_one);
+        declaration.setProperty("--foreground-color", data[is].color_two);
       } else {
-        declaration.setProperty(
-          "--background-color",
-          data.most_active_20[is].color_two
-        );
-        declaration.setProperty(
-          "--foreground-color",
-          data.most_active_20[is].color_one
-        );
+        declaration.setProperty("--background-color", data[is].color_two);
+        declaration.setProperty("--foreground-color", data[is].color_one);
       }
 
-      document.body.classList.add('appear')
+      document.body.classList.add("appear");
     }
   });
 }
